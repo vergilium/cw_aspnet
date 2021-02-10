@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{3F49D36B-EE59-4332-9DFD-11312BF94CAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "src\API\API.csproj", "{3F49D36B-EE59-4332-9DFD-11312BF94CAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbEntities", "DbEntities\DbEntities.csproj", "{0B32888C-5BD1-43AC-BDDA-562483B23F4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbEntities", "src\DB\DbEntities\DbEntities.csproj", "{0B32888C-5BD1-43AC-BDDA-562483B23F4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "DbContext\DbContext.csproj", "{D0412728-1CA9-4C1A-ADD8-99BC308BE88A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "src\DB\DbContext\DbContext.csproj", "{D0412728-1CA9-4C1A-ADD8-99BC308BE88A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbAbstractions", "DbAbstractions\DbAbstractions.csproj", "{A2837E80-9CEC-449E-94A3-11807BEB522D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbAbstractions", "src\DB\DbAbstractions\DbAbstractions.csproj", "{A2837E80-9CEC-449E-94A3-11807BEB522D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbRepositories", "DbRepositories\DbRepositories.csproj", "{7AA6492C-7992-4723-A0D6-51B001C8E3A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbRepositories", "src\DB\DbRepositories\DbRepositories.csproj", "{7AA6492C-7992-4723-A0D6-51B001C8E3A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6BBDD5F5-C1B2-4334-B9DA-F821CAA377F5}"
 EndProject
