@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/.idea.CW_ASPNET.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\vergilium\source\repos\vergilium\CW_ASPNET\.idea\.idea.CW_ASPNET\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
