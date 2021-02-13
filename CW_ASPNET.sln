@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "src\API\API.csproj", "{3F49D36B-EE59-4332-9DFD-11312BF94CAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "src\WebApp\WebApp.csproj", "{3F49D36B-EE59-4332-9DFD-11312BF94CAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbEntities", "src\DB\DbEntities\DbEntities.csproj", "{0B32888C-5BD1-43AC-BDDA-562483B23F4B}"
 EndProject

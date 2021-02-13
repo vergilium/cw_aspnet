@@ -1,7 +1,7 @@
 ﻿namespace DbAbstractions {
     public interface IDbIdentity {
         /// <summary>
-        ///  The value for element 'id' in a JSON:API request or response.
+        ///  The value for element 'id' in a JSON:WebApp request or response.
         /// </summary>
         string StringId { get; set; }
     }
