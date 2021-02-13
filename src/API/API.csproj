@@ -6,15 +6,15 @@
         <Authors>Maloivan Oleksii</Authors>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers" />
-      <Folder Include="Models" />
-    </ItemGroup>
+    <PropertyGroup>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.3" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
       <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.3">
@@ -32,6 +32,10 @@
       <ProjectReference Include="..\DB\DbContext\DbContext.csproj" />
       <ProjectReference Include="..\DB\DbEntities\DbEntities.csproj" />
       <ProjectReference Include="..\DB\DbRepositories\DbRepositories.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models" />
     </ItemGroup>
 
 </Project>
