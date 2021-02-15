@@ -1,0 +1,36 @@
+﻿/*********************************
+    HEADER 
+ *********************************/
+header {
+    border-bottom: white 1px;
+    background: #4da5f5;
+    height: 92px;
+}
+/**********LOGO**********/
+a.logo {
+    height: auto;
+    color: white;
+    font-family: "Arial Black", serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+a.logo:visited {
+    color: white;
+}
+
+a.logo:hover {
+    color: white;
+}
+/************/
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}

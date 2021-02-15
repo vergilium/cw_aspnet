@@ -41,7 +41,6 @@
       <Folder Include="wwwroot\img" />
       <Folder Include="wwwroot\js" />
       <Folder Include="wwwroot\lib" />
-      <Folder Include="wwwroot\style" />
     </ItemGroup>
 
 </Project>

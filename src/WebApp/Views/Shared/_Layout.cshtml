@@ -5,11 +5,49 @@
     <title>@ViewData["Title"]</title>
     <link rel="icon" href="favicon.png" type="image/png"/>
     <link rel="shortcut icon" href="favicon.png" type="image/png"/>
-    
+    <link rel="stylesheet" href="~/style/style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-sm mb-3">
+        <div class="container-fluid">
+          <a class="logo navbar-brand" href="#">ALEX DOCS</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="fas fa-bars"></i>
+                  </button>
+            <div class="collapse navbar-collapse position-absolute top-50 start-100  translate-middle col-md-12" id="navbarHeader">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link link-light" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link-light dropdown-toggle" href="#" id="dropdownFeatures" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Features</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownFeatures">
+                    <li><a class="dropdown-item" href="#">Action</a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="#">About</a>
+                </li>
+                @Html.Partial("_Login_partial");
+              </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
 @RenderBody()
 
