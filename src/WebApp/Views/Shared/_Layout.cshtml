@@ -7,52 +7,89 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png"/>
     <link rel="stylesheet" href="~/style/style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+    <link href="style/login.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-sm mb-3">
-        <div class="container-fluid">
-          <a class="logo navbar-brand" href="#">ALEX DOCS</a>
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarExample01"
-                    aria-controls="navbarExample01"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <i class="fas fa-bars"></i>
-                  </button>
-            <div class="collapse navbar-collapse position-absolute top-50 start-100  translate-middle col-md-12" id="navbarHeader">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link link-light" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link link-light dropdown-toggle" href="#" id="dropdownFeatures" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Features</a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownFeatures">
-                    <li><a class="dropdown-item" href="#">Action</a> </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light" href="#">About</a>
-                </li>
-                @Html.Partial("_Login_partial");
-              </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-sm mb-3">
+    <div class="container-fluid">
+      <a class="logo navbar-brand" href="#">ALEX DOCS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarHeader"
+        aria-controls="navbarHeader"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse position-absolute top-50 start-100  translate-middle col-md-12" id="navbarHeader">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link link-light text-uppercase" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link link-light dropdown-toggle text-uppercase" href="#" id="dropdownFeatures" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Features</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownFeatures">
+              <li><a class="dropdown-item " href="#">Action</a> </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light text-uppercase" href="#">Knowledge base</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-light text-uppercase" href="#">About</a>
+          </li>
+          @Html.Partial("_Login_partial");
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+<div class="wrapper fadeInDown" style="display: none">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="~/img/user_logo.svg" height="80px" width="80px" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form class="loginForm" method="post" action="~/Auth/Login">
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="email">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
 </header>
 
 @RenderBody()
 
 <script src="~/lib/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-@await RenderSectionAsync("Scripts", required: false)
+<script type="application/javascript">
+$('#btn-login').click(function (){
+  $('.wrapper').show();  
+});
+$(document).mouseup(function (e){
+		let div = $(".wrapper");
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+</script>
 </body>
 </html>
